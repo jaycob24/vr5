@@ -10,8 +10,8 @@
 	<body>
 		<script type="module">
 			import * as THREE from 'https://cdn.jsdelivr.net/npm/three/build/three.module.js';
-			import { FontLoader } from 'FontLoader.js';
-			import { TextGeometry } from 'TextGeometry.js';
+			import { FontLoader } from '/FontLoader.js';
+			import { TextGeometry } from '/TextGeometry.js';
 
 		      	const renderer = new THREE.WebGLRenderer();
 		      	renderer.setSize( window.innerWidth, window.innerHeight );
@@ -25,7 +25,7 @@
 		
 		      	const loader = new FontLoader();
 
-			loader.load( 'helvetiker_regular.typeface.json', function ( font ) {
+			loader.load( '/helvetiker_regular.typeface.json', function ( font ) {
 
 				const geometry = new TextGeometry( 'Hello three.js!', {
 					font: font,
