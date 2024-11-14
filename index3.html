@@ -11,6 +11,14 @@
 		<script type="module">
 			import * as THREE from 'https://cdn.jsdelivr.net/npm/three/build/three.module.js';
 
+			import Stats from 'three/addons/libs/stats.module.js';
+
+			import { FirstPersonControls } from 'three/addons/controls/FirstPersonControls.js';
+			import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+			import { FontLoader } from 'three/addons/loaders/FontLoader.js';
+			import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
+			import { ShadowMapViewer } from 'three/addons/utils/ShadowMapViewer.js';
+
 		      	const renderer = new THREE.WebGLRenderer();
 		      	renderer.setSize( window.innerWidth, window.innerHeight );
 		      	document.body.appendChild( renderer.domElement );
